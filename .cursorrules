@@ -1,0 +1,4 @@
+This repository is a marketing website for a company helping performance artists build a good looking website with a simple free CMS so annual subscriptions can be avoided. It is built with Pages CMS and Vite with Tailwind, ts and react.
+The website is hosted on GitHub Pages and is deployed using the Pages CMS action.
+
+Use docs to learn about the Pages CMS and the ideas.
