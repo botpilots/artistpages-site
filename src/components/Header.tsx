@@ -58,7 +58,7 @@ export function Header({
     <header className="pointer-events-none fixed top-0 right-0 z-50 p-4 md:p-6">
       <div
         className={`pointer-events-auto origin-top-right overflow-hidden border border-stone-300/60 bg-stone-50/95 shadow-lg backdrop-blur-md transition-[width,height,padding] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          open ? 'h-[32rem] w-72 px-8 pb-10 pt-5' : 'h-12 w-12 p-0'
+          open ? 'h-auto w-72 px-8 pb-8 pt-5' : 'h-12 w-12 p-0'
         }`}
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
@@ -82,7 +82,7 @@ export function Header({
         </button>
 
         <div
-          className={`flex h-full flex-col items-center transition-opacity duration-300 ${
+          className={`flex flex-col items-center transition-opacity duration-300 ${
             open ? 'pointer-events-auto opacity-100 delay-150' : 'pointer-events-none opacity-0'
           }`}
         >
