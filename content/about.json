@@ -1,0 +1,25 @@
+{
+  "eyebrow": "About",
+  "ingress": "Discover ArtistPages, where expert web designers gets you a professional website for a one-time fee.",
+  "paragraphs": [
+    "Have you ever thought about marketing yourself with a dedicated website, or are you sticking strictly to Instagram for now?",
+    "We get it — there are many alternatives out there already. The problem is that most website builders force users to pay expensive yearly subscriptions. Over time, that becomes very pricey.",
+    "That's why we started ArtistPages. The concept is simple: for a fixed, affordable price, we listen to your unique needs as an artist and build a professional, customisable webpage for you. For a stronger first impression — without the recurring yearly fees."
+  ],
+  "whoWeAreTitle": "Who we are",
+  "whoWeAreItems": [
+    "Professional full-stack engineers since 2022",
+    "Many of our family and friends are artists"
+  ],
+  "linkedInUrl": "https://www.linkedin.com/in/oskarhuledal/",
+  "linkedInLabel": "See our LinkedIn",
+  "featuresTitle": "Examples of features",
+  "features": [
+    "Biography",
+    "Event Calendar",
+	"Portfolio / Videos / Images",
+    "Blog",
+    "Multi-language support",
+    "Custom Domain Set-Up"
+  ]
+}

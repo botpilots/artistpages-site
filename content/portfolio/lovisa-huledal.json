@@ -1,0 +1,13 @@
+{
+  "title": "Lovisa Huledal",
+  "date": "2026-03-01",
+  "description": "Mezzo-soprano portfolio with programmes, performance videos, events calendar, and repertoire — all editable through Pages CMS.",
+  "siteUrl": "https://lovisahuledal.com",
+  "gallery": [
+    {
+      "type": "video",
+      "video": "/media/lovisa-huledal-site.mp4",
+      "alt": "Screen recording of Lovisa Huledal's artist website"
+    }
+  ]
+}

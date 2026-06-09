@@ -102,10 +102,45 @@ content:
         description: Logo shown on the left (desktop) or above (mobile) in the hero.
         type: image
 
-      - name: heroSubtitle
-        label: Hero subtitle
-        description: One-liner shown to the right (desktop) or below (mobile) the logo.
+      - name: heroSubtitleLead
+        label: Hero subtitle (lead)
+        description: First line shown below the logo (fades in first).
         type: text
+
+      - name: heroSubtitleFollow
+        label: Hero subtitle (follow)
+        description: Second line shown below the lead (fades in after a delay).
+        type: text
+
+      - name: navAbout
+        label: Nav — About
+        description: Header link label for the about section.
+        type: string
+
+      - name: navPortfolio
+        label: Nav — Portfolio
+        description: Header link label for the portfolio section.
+        type: string
+
+      - name: navContact
+        label: Nav — Contact
+        description: Header link label for the contact section.
+        type: string
+
+      - name: portfolioEyebrow
+        label: Portfolio eyebrow
+        description: Small uppercase label above the portfolio section title.
+        type: string
+
+      - name: portfolioTitle
+        label: Portfolio title
+        description: Main heading for the portfolio section.
+        type: text
+
+      - name: portfolioVisitLabel
+        label: Portfolio visit link
+        description: Link text for each project's live site.
+        type: string
 
   # ABOUT
   - name: about
@@ -116,22 +151,46 @@ content:
     operations:
       delete: false
     fields:
-      - name: title
-        label: Page title
+      - name: eyebrow
+        label: Eyebrow
+        description: Small uppercase label above the section.
         type: string
 
-      - name: body
-        label: Body
-        type: rich-text
+      - name: ingress
+        label: Ingress
+        description: Lead line shown below the eyebrow.
+        type: text
 
-      - name: images
-        label: Images
-        type: object
-        component: positionedImage
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{alt}"
+      - name: paragraphs
+        label: Intro paragraphs
+        type: text
+        list: true
+
+      - name: whoWeAreTitle
+        label: Who we are — title
+        type: string
+
+      - name: whoWeAreItems
+        label: Who we are — bullets
+        type: string
+        list: true
+
+      - name: linkedInUrl
+        label: LinkedIn URL
+        type: string
+
+      - name: linkedInLabel
+        label: LinkedIn link label
+        type: string
+
+      - name: featuresTitle
+        label: Features — title
+        type: string
+
+      - name: features
+        label: Features
+        type: string
+        list: true
 
   # PORTFOLIO
   - name: portfolio
@@ -158,6 +217,11 @@ content:
       - name: description
         label: Description
         type: text
+
+      - name: siteUrl
+        label: Live site URL
+        description: Link to the published artist website.
+        type: string
 
       - name: coverImage
         label: Cover image
@@ -258,45 +322,27 @@ content:
     operations:
       delete: false
     fields:
-      - name: agency
-        label: Agency
-        type: object
-        fields:
-          - name: name
-            label: Name
-            type: string
+      - name: eyebrow
+        label: Eyebrow
+        description: Small uppercase label above the section.
+        type: string
 
-          - name: email
-            label: Email
-            type: string
+      - name: title
+        label: Title
+        type: string
 
-          - name: phone
-            label: Phone
-            type: string
+      - name: description
+        label: Description
+        type: text
 
-      - name: artistPages
-        label: Artist Pages
-        type: object
-        fields:
-          - name: name
-            label: Name
-            type: string
+      - name: email
+        label: Email
+        type: string
 
-          - name: email
-            label: Email
-            type: string
-
-          - name: phone
-            label: Phone
-            type: string
-
-          - name: location
-            label: Location
-            type: string
-
-      - name: socialMedia
-        label: Social Media
-        component: socialMedia
+      - name: emailLabel
+        label: Email link label
+        description: Text shown for the mailto link (often the same as the email).
+        type: string
 
 actions:
   - name: deploy-site

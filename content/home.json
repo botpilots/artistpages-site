@@ -1,4 +1,11 @@
 {
   "heroLogo": "/media/artist_pages_5.svg",
-  "heroSubtitle": "Tired of pricey monthly subscriptions? Discover ArtistPages—where expert designers craft your custom webpage for a one-time fee."
+  "heroSubtitleLead": "Professional websites.",
+  "heroSubtitleFollow": "On each artist's terms.",
+  "navAbout": "About",
+  "navPortfolio": "Portfolio",
+  "navContact": "Contact",
+  "portfolioEyebrow": "Portfolio",
+  "portfolioTitle": "Artist websites we've built",
+  "portfolioVisitLabel": "Visit site →"
 }

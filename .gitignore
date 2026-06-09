@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Source screen recordings — commit the compressed .mp4 instead
+public/media/*.mov
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
