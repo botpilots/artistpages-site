@@ -1,8 +1,12 @@
+import { deobfuscateEmail } from '../lib/deobfuscateEmail'
 import type { ContactContent } from '../types/contact'
 
 type ContactProps = ContactContent
 
 export function Contact({ eyebrow, title, description, email, emailLabel }: ContactProps) {
+  const decodedEmail = deobfuscateEmail(email)
+  const decodedLabel = deobfuscateEmail(emailLabel)
+
   return (
     <section id="contact" className="border-t border-stone-200 bg-stone-50 px-6 py-20">
       <div className="mx-auto max-w-2xl text-center">
@@ -12,10 +16,10 @@ export function Contact({ eyebrow, title, description, email, emailLabel }: Cont
 
         {email ? (
           <a
-            href={`mailto:${email}`}
+            href={`mailto:${decodedEmail}`}
             className="mt-8 inline-block text-base font-medium text-amber-800 underline decoration-amber-800/30 underline-offset-4 transition-colors hover:text-amber-900"
           >
-            {emailLabel}
+            {decodedLabel}
           </a>
         ) : null}
       </div>

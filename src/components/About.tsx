@@ -28,6 +28,20 @@ export function About({
         </div>
 
         <div className="mt-12">
+          <h3 className="font-serif text-xl font-medium text-stone-900">{featuresTitle}</h3>
+          <ul className="mt-4 space-y-2 font-reading text-base leading-relaxed text-stone-700">
+            {features.map((feature) => (
+              <li key={feature} className="flex gap-2">
+                <span className="text-stone-400" aria-hidden="true">
+                  →
+                </span>
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-12">
           <h3 className="font-serif text-xl font-medium text-stone-900">{whoWeAreTitle}</h3>
           <ul className="mt-4 space-y-2 font-reading text-base leading-relaxed text-stone-700">
             {whoWeAreItems.map((item) => (
@@ -53,20 +67,6 @@ export function About({
                 </a>
               </li>
             ) : null}
-          </ul>
-        </div>
-
-        <div className="mt-12">
-          <h3 className="font-serif text-xl font-medium text-stone-900">{featuresTitle}</h3>
-          <ul className="mt-4 space-y-2 font-reading text-base leading-relaxed text-stone-700">
-            {features.map((feature) => (
-              <li key={feature} className="flex gap-2">
-                <span className="text-stone-400" aria-hidden="true">
-                  →
-                </span>
-                <span>{feature}</span>
-              </li>
-            ))}
           </ul>
         </div>
       </div>

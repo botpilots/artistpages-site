@@ -8,18 +8,17 @@
   ],
   "whoWeAreTitle": "Who we are",
   "whoWeAreItems": [
-    "Professional full-stack engineers since 2022",
-    "Many of our family and friends are artists"
+    "Professional full-stack developers with background in artistry"
   ],
-  "linkedInUrl": "https://www.linkedin.com/in/oskarhuledal/",
-  "linkedInLabel": "See our LinkedIn",
+  "linkedInUrl": "https://hulsbo.github.io/cv-page/",
+  "linkedInLabel": "See CV",
   "featuresTitle": "Examples of features",
   "features": [
     "Biography",
-    "Event Calendar",
 	"Portfolio / Videos / Images",
+    "Event Calendar",
     "Blog",
-    "Multi-language support",
+	"Multi-language support",
     "Custom Domain Set-Up"
   ]
 }
