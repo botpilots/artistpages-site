@@ -1,24 +1,16 @@
 {
   "eyebrow": "About",
-  "ingress": "Discover ArtistPages, where expert web designers gets you a professional website for a one-time fee.",
+  "ingress": "Your website should last years — not drain your budget every month.",
   "paragraphs": [
-    "Have you ever thought about marketing yourself with a dedicated website, or are you sticking strictly to Instagram for now?",
-    "We get it — there are many alternatives out there already. The problem is that most website builders force users to pay expensive yearly subscriptions. Over time, that becomes very pricey.",
-    "That's why we started ArtistPages. The concept is simple: for a fixed, affordable price, we listen to your unique needs as an artist and build a professional, customisable webpage for you. For a stronger first impression — without the recurring yearly fees."
+    "Are you an artist who wants a dedicated website, but finds the options too costly over time or too rigid for your needs?",
+    "Most website builders lock you into monthly or yearly subscriptions. Over five years, those fees can easily add up to €1,000 — a real drain on a working artist's business.",
+	"That's why I created ArtistPages: a personal website service built specifically for artists.",
+    "For one fixed price, I will listen to your needs and build a custom website tailored to your profile. This gives you a strong first impression you can update yourself, without the recurring fees (except for the custom domain being ~€5–10 per year)."
   ],
-  "whoWeAreTitle": "Who we are",
+  "whoWeAreTitle": "What makes this different",
   "whoWeAreItems": [
-    "Professional full-stack developers with background in artistry"
-  ],
-  "linkedInUrl": "https://hulsbo.github.io/cv-page/",
-  "linkedInLabel": "See CV",
-  "featuresTitle": "Examples of features",
-  "features": [
-    "Biography",
-	"Portfolio / Videos / Images",
-    "Event Calendar",
-    "Blog",
-	"Multi-language support",
-    "Custom Domain Set-Up"
+    "A one-person studio dedicated to artist websites.",
+    "Custom design — no templates forced on you.",
+    "Zero subscription fees. You own your website."
   ]
 }

@@ -3,11 +3,16 @@ import type { HomeContent } from '../types/home'
 import { assetUrl } from '../lib/assetUrl'
 import { scrollToSection } from '../lib/scrollToSection'
 
-type HeaderProps = Pick<HomeContent, 'heroLogo' | 'navAbout' | 'navPortfolio' | 'navContact'>
+type HeaderProps = Pick<
+  HomeContent,
+  'heroLogo' | 'navAbout' | 'navOffer' | 'navWhoIAm' | 'navPortfolio' | 'navContact'
+>
 
 const navItems = [
   { id: 'about', labelKey: 'navAbout' as const },
+  { id: 'offer', labelKey: 'navOffer' as const },
   { id: 'portfolio', labelKey: 'navPortfolio' as const },
+  { id: 'who-i-am', labelKey: 'navWhoIAm' as const },
   { id: 'contact', labelKey: 'navContact' as const },
 ]
 
@@ -33,9 +38,16 @@ function HamburgerIcon({ open }: { open: boolean }) {
   )
 }
 
-export function Header({ heroLogo, navAbout, navPortfolio, navContact }: HeaderProps) {
+export function Header({
+  heroLogo,
+  navAbout,
+  navOffer,
+  navWhoIAm,
+  navPortfolio,
+  navContact,
+}: HeaderProps) {
   const [open, setOpen] = useState(false)
-  const labels = { navAbout, navPortfolio, navContact }
+  const labels = { navAbout, navOffer, navWhoIAm, navPortfolio, navContact }
 
   const handleNavClick = (id: string) => {
     scrollToSection(id)
@@ -46,7 +58,7 @@ export function Header({ heroLogo, navAbout, navPortfolio, navContact }: HeaderP
     <header className="pointer-events-none fixed top-0 right-0 z-50 p-4 md:p-6">
       <div
         className={`pointer-events-auto origin-top-right overflow-hidden border border-stone-300/60 bg-stone-50/95 shadow-lg backdrop-blur-md transition-[width,height,padding] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          open ? 'h-[22rem] w-72 px-8 pb-10 pt-5' : 'h-12 w-12 p-0'
+          open ? 'h-[32rem] w-72 px-8 pb-10 pt-5' : 'h-12 w-12 p-0'
         }`}
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}

@@ -4,8 +4,30 @@ export type AboutContent = {
   paragraphs: string[]
   whoWeAreTitle: string
   whoWeAreItems: string[]
-  linkedInUrl: string
-  linkedInLabel: string
+}
+
+export type OfferContent = {
+  eyebrow: string
+  ingress: string
+  summary: string
+  pricing: string
   featuresTitle: string
   features: string[]
+  footnote: string
+}
+
+export type WhoIAmContent = {
+  eyebrow: string
+  ingress: string
+  techTitle: string
+  techImage: string
+  techImageAlt: string
+  techDescription: string
+  cvUrl: string
+  cvLabel: string
+  artistTitle: string
+  artistImage: string
+  artistImageAlt: string
+  artistDescription: string
+  closing: string
 }

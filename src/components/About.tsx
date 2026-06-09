@@ -2,17 +2,7 @@ import type { AboutContent } from '../types/about'
 
 type AboutProps = AboutContent
 
-export function About({
-  eyebrow,
-  ingress,
-  paragraphs,
-  whoWeAreTitle,
-  whoWeAreItems,
-  linkedInUrl,
-  linkedInLabel,
-  featuresTitle,
-  features,
-}: AboutProps) {
+export function About({ eyebrow, ingress, paragraphs, whoWeAreTitle, whoWeAreItems }: AboutProps) {
   return (
     <section id="about" className="border-t border-stone-200 bg-white px-6 py-20">
       <div className="mx-auto max-w-2xl">
@@ -28,20 +18,6 @@ export function About({
         </div>
 
         <div className="mt-12">
-          <h3 className="font-serif text-xl font-medium text-stone-900">{featuresTitle}</h3>
-          <ul className="mt-4 space-y-2 font-reading text-base leading-relaxed text-stone-700">
-            {features.map((feature) => (
-              <li key={feature} className="flex gap-2">
-                <span className="text-stone-400" aria-hidden="true">
-                  →
-                </span>
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="mt-12">
           <h3 className="font-serif text-xl font-medium text-stone-900">{whoWeAreTitle}</h3>
           <ul className="mt-4 space-y-2 font-reading text-base leading-relaxed text-stone-700">
             {whoWeAreItems.map((item) => (
@@ -52,21 +28,6 @@ export function About({
                 <span>{item}</span>
               </li>
             ))}
-            {linkedInUrl ? (
-              <li className="flex gap-2">
-                <span className="text-stone-400" aria-hidden="true">
-                  –
-                </span>
-                <a
-                  href={linkedInUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-amber-800 underline decoration-amber-800/30 underline-offset-2 hover:text-amber-900"
-                >
-                  {linkedInLabel}
-                </a>
-              </li>
-            ) : null}
           </ul>
         </div>
       </div>

@@ -12,7 +12,7 @@ export function Hero({ heroLogo, heroSubtitleLead, heroSubtitleFollow }: HeroPro
           alt="ArtistPages"
           className="animate-fade-in-logo h-auto w-full max-w-sm md:max-w-md"
         />
-        <p className="font-serif text-lg leading-relaxed text-stone-800 md:text-xl">
+        <p className="font-serif whitespace-nowrap text-[clamp(0.65rem,3.2vw,1.25rem)] leading-relaxed text-stone-800 md:text-xl">
           <span className="animate-fade-in-tagline-1">{heroSubtitleLead}</span>{' '}
           <span className="animate-fade-in-tagline-2">{heroSubtitleFollow}</span>
         </p>

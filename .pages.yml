@@ -117,6 +117,16 @@ content:
         description: Header link label for the about section.
         type: string
 
+      - name: navOffer
+        label: Nav — Offer
+        description: Header link label for the offer section.
+        type: string
+
+      - name: navWhoIAm
+        label: Nav — Who I am
+        description: Header link label for the who I am section.
+        type: string
+
       - name: navPortfolio
         label: Nav — Portfolio
         description: Header link label for the portfolio section.
@@ -167,21 +177,39 @@ content:
         list: true
 
       - name: whoWeAreTitle
-        label: Who we are — title
+        label: Differentiators — title
         type: string
 
       - name: whoWeAreItems
-        label: Who we are — bullets
+        label: Differentiators — bullets
         type: string
         list: true
 
-      - name: linkedInUrl
-        label: LinkedIn URL
+  # OFFER
+  - name: offer
+    label: Offer
+    type: file
+    path: content/offer.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: eyebrow
+        label: Eyebrow
         type: string
 
-      - name: linkedInLabel
-        label: LinkedIn link label
-        type: string
+      - name: ingress
+        label: Ingress
+        type: text
+
+      - name: summary
+        label: Summary
+        type: text
+
+      - name: pricing
+        label: Pricing
+        description: Prominent price line shown below the summary (e.g. starting price and payment model).
+        type: text
 
       - name: featuresTitle
         label: Features — title
@@ -191,6 +219,72 @@ content:
         label: Features
         type: string
         list: true
+
+      - name: footnote
+        label: Footnote
+        description: Closing note encouraging contact for custom needs.
+        type: text
+
+  # WHO I AM
+  - name: who-i-am
+    label: Who I am
+    type: file
+    path: content/who-i-am.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: eyebrow
+        label: Eyebrow
+        type: string
+
+      - name: ingress
+        label: Ingress
+        type: text
+
+      - name: techTitle
+        label: Tech side — title
+        type: string
+
+      - name: techImage
+        label: Tech side — image
+        type: image
+
+      - name: techImageAlt
+        label: Tech side — image alt text
+        type: string
+
+      - name: techDescription
+        label: Tech side — description
+        type: text
+
+      - name: cvUrl
+        label: CV URL
+        type: string
+
+      - name: cvLabel
+        label: CV link label
+        type: string
+
+      - name: artistTitle
+        label: Artist side — title
+        type: string
+
+      - name: artistImage
+        label: Artist side — image
+        type: image
+
+      - name: artistImageAlt
+        label: Artist side — image alt text
+        type: string
+
+      - name: artistDescription
+        label: Artist side — description
+        type: text
+
+      - name: closing
+        label: Closing line
+        type: text
 
   # PORTFOLIO
   - name: portfolio

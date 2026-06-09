@@ -3,6 +3,8 @@ export type HomeContent = {
   heroSubtitleLead: string
   heroSubtitleFollow: string
   navAbout: string
+  navOffer: string
+  navWhoIAm: string
   navPortfolio: string
   navContact: string
   portfolioEyebrow: string
